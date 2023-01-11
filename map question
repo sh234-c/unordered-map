@@ -1,0 +1,11 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+int main(){
+    unordered_map<int,int> um={ {1,25},{3,9},{6,8} };
+    um[4]=8;
+    for(auto x:um){//auto x belongs to um
+        cout<<x.first<<" =>"<<x.second <<endl;
+    }
+    return 0;
+}
