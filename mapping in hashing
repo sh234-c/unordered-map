@@ -1,0 +1,90 @@
+// // #include <bits/stdc++.h>
+// // #include <unordered_map>
+
+// // using namespace std;
+// // int main(){
+// //     unordered_map<string,int>umap;//we can store "key value pair" in umap
+// //     umap["Shruti"]=67;
+// //     umap["Sakshi"]=55;
+// //     umap["Rajan"]=44;
+// //     // for(auto x:umap)//umap all value entered in x
+// //     // cout<<x.first<<" "<<x.second<<endl;
+// //     //now we use iterator
+// //     for(auto itr=umap.begin();itr!=umap.end();itr++)
+// //     cout<<itr->first<<" "<<itr->second<<endl;
+
+// // //now we have to find the key
+// // string key="Shruti";
+// // if(umap.find(key)!=umap.end())
+// // cout<<"key found"<<endl;
+// // else
+// // cout<<"key not found"<<endl;
+
+// // if(umap.find(key)!=umap.end()){
+// //     auto temp=umap.find(key);
+// //     cout<<"key is:"<<temp->first<<endl;
+// //       cout<<"value is:"<<temp->second<<endl;
+// // }
+// // }
+// // unordered map find function
+// #include <bits/stdc++.h>
+// #include <unordered_map>
+
+// using namespace std;
+// int main(){
+//     unordered_map<string,int>umap;
+//     umap["Kriti"]=56;
+//     umap["Anusha"]=78;
+//     umap["Sagar"]=45;
+//     // for(auto x:umap)
+//     // cout<<x.first<<" "<<x.second<<endl;
+// //       for(auto itr=umap.begin();itr!=umap.end();itr++)
+// //     cout<<itr->first<<" "<<itr->second<<endl;
+// // string key="Shruti";
+// // if(umap.find(key)!=umap.end())
+// // cout<<"key found"<<endl;
+// // else
+// // cout<<"key not found"<<endl;
+// // }
+// // for(auto itr=umap.begin();itr!=umap.end();itr++)
+// // cout<<itr->first<<" "<<itr->second<<endl;
+// string key="Kriti";
+// if(umap.find(key)!=umap.end())
+// cout<<"key found"<<endl;
+// else
+// cout<<"key not found"<<endl;
+
+// umap.insert(make_pair("Mobile",25000));
+//  key="Sagar";
+// umap.erase(key);
+// for(auto itr=umap.begin();itr!=umap.end();itr++)
+// cout<<itr->first<<" "<<itr->second<<endl;
+// cout<<umap.size()<<endl;
+// }
+#include <bits/stdc++.h>
+#include <unordered_map>
+using namespace std;
+
+int main(){
+    unordered_map<string,int>umap;
+    umap["Virat"]=33;
+    umap["Dhoni"]=45;
+    umap["Rohit"]=78;
+    // for(auto x:umap)
+    // cout<<x.first<<" "<<x.second<<endl;
+    //now we use iterator 
+    // for(auto itr=umap.begin();itr!=umap.end();itr++)
+    // cout<<itr->first<<" "<<itr->second<<endl;
+
+string key="Shruti";
+if(umap.find(key)!=umap.end())
+cout<<"key found"<<endl;
+else
+cout<<"key not found"<<endl;
+umap.insert(make_pair("Mobile",15000));
+key="Virat";
+umap.erase(key);
+   for(auto itr=umap.begin();itr!=umap.end();itr++)
+    cout<<itr->first<<" "<<itr->second<<endl;
+    cout<<umap.size()<<endl;
+}
